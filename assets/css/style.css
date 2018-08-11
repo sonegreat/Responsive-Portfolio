@@ -152,9 +152,57 @@ h3{
             border-radius: 5px;
             padding: 20px;
         }
-        
-        @media only screen and (max-width: 980px, 768px, 640px){
+        /*adding media screen to max-width of 980px, 768px, 640px) */
+        @media screen and (max-width: 980px){
             header{
                 position: static;
             }
+            ul{
+                padding: 0;
+                padding-right: 30px;
+            }
+            .navName{
+                float: left !important;
+            }
+            li{
+                float: right;
+                
+            }
+
         }
+        @media screen and (max-width: 768px){
+            header{
+                position: static;
+            }
+            ul{
+                padding: 0;
+                padding-right: 30px
+            }
+            
+            .navName{
+                float: left !important;
+            }
+            li{
+                float: right;
+                
+            }
+        }
+        @media screen and (max-width: 640px){
+            header{
+                position: static;
+            }
+            ul{
+                padding: 0;
+            }
+            
+            .navName{
+                float: none !important;
+                padding: 0;
+            }
+            li{
+                float: left;
+                padding-left: 20px;
+            }
+        }
+
+        
